@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Weather</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+<ion-grid *ngIf='weather'>
+  <ion-row>
+    <ion-col width-50 offset-25>
+      <h2 class="location">{{weather.display_location.full}}</h2>
+    <div class="icon"><img src="{{weather.icon_url}}" alt=""></div>
+    <h3 class="desc">{{weather.weather}}</h3>
+    <h1 class="temp">{{weather.temp_c}}&deg;</h1>
+    </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col width-100>
+<ion-list>
+  <ion-item class="a">
+    <strong>Temp:</strong>{{weather.temperature_string}}
+  </ion-item>
+  <ion-item class="a">
+      <strong>Relative Humidity:</strong>{{weather.relative_humidity}}
+    </ion-item>
+    <ion-item class="a">
+        <strong>Dewpoint:</strong>{{weather.dewpoint_string}}
+      </ion-item>
+      <ion-item class="a">
+          <strong>visibility:</strong>{{weather.visibility_mi}}
+        </ion-item>
+        <ion-item class="a">
+            <strong>Heat Index:</strong>{{weather.heat_index_string}}
+          </ion-item>
+          <ion-item class="a">
+              <strong>Time:</strong>{{weather.observation_time_rfc822}}
+            </ion-item>
+            <ion-item class="a">
+                <strong>Wind Speed(in Kph):</strong>{{weather.wind_kph}}
+              </ion-item>
+              <ion-item class="a">
+                  <strong>Wind Direction:</strong>{{weather.wind_dir}}
+                </ion-item>
+                <ion-item class="a">
+                    <strong>Pressure:</strong>{{weather.pressure_in}}
+                  </ion-item>
+                  <ion-item class="a">
+                      <strong>Precipitation:</strong>{{weather.precip_today_metric}}
+                    </ion-item>
+</ion-list>
+  </ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>
