@@ -32,7 +32,7 @@ this.weatherProvider.getWeather(this.location.city,this.location.country).subscr
 }
 ionViewDidLoad(){
 const bannerConfig: AdMobFreeBannerConfig = {
-  id:'ca-app-pub-4513184444448711/7952707564',
+  id:'your-adsmob-key',
   //isTesting: true,
   autoShow: true
  };
