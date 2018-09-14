@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class WeatherProvider {
-apikey='79cdbd17db4bb0b6';
+apikey='your_api-key';
 url;
   constructor(public http: Http) {
     console.log('Hello WeatherProvider Provider');
