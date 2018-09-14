@@ -35,7 +35,7 @@ export class SettingsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingsPage');
     const bannerConfig: AdMobFreeBannerConfig = {
-      id:'ca-app-pub-4513184444448711/7952707564',
+      id:'your_admob_key',
       //isTesting: true,
       autoShow: true
      };
